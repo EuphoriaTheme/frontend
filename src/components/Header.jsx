@@ -5,7 +5,7 @@ import { faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 export default function Header() {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-gray-900 shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,7 +66,7 @@ export default function Header() {
         >
           <FontAwesomeIcon icon={faDiscord} size="md" />
         </a>
-        <a className="btn btn-primary ml-2">Button</a>
+        <a className="btn btn-primary ml-2">Login</a>
       </div>
     </div>
   );
