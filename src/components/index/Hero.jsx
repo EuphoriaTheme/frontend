@@ -1,5 +1,5 @@
 import React from "react";
-import bannerimg from '../assets/header.png'; // Adjust the path as necessary
+import bannerimg from '../../assets/header.png'; // Adjust the path as necessary
 
 export default function Hero() {
   return (

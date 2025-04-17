@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Products from "./components/Products";
-import Donators from "./components/Donators";
-import Contributors from "./components/Contributors";
+import Hero from "./components/index/Hero";
+import Products from "./components/index/Products";
+import Donators from "./components/index/Donators";
+import Contributors from "./components/index/Contributors";
 import Footer from "./components/Footer";
-import Details from "./components/Details";
+import Details from "./components/index/Details";
+import GalleryDashboard from "./components/dashboard/Gallery";
 import ProtectedRoute from './ProtectedRoute'; // Import the protected route
 import './styles.css';
 
@@ -33,7 +34,7 @@ export default function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
-                <Details />
+                <GalleryDashboard />
               </ProtectedRoute>
             }
           />
